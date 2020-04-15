@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"name": "temp",
+			"path": "/Users/hinioa/Documents/Workspace/temp"
+		},
+		{
+			"name": "Codewars",
+			"path": "/Users/hinioa/Documents/Workspace/Codewars"
+		},
+		{
+			"name": "DataStructure and Algorithm",
+			"path": "/Users/hinioa/Documents/Workspace/DataStructure and Algorithm"
+		},
+		{
+			"name": "vue-el-admin",
+			"path": "/Users/hinioa/Documents/Workspace/vue-el-admin"
+		},
+		{
+			"name": "vue-mobie-mall",
+			"path": "/Users/hinioa/Documents/Workspace/vue-mobie-mall"
+		},
+		{
+			"name": "NodeJS",
+			"path": "/Users/hinioa/Documents/Workspace/NodeJS"
+		},
+		{
+			"name": "mes_front_end",
+			"path": "/Users/hinioa/Documents/Workspace/MES Refactoring/Source Code/mes_front_end"
+		},
+		{
+			"name": "mes_back_end",
+			"path": "/Users/hinioa/Documents/Workspace/MES Refactoring/Source Code/mes_back_end"
+		},
+		{
+			"path": "/Users/hinioa/Documents/Workspace/Max CSS exercise"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Max CSS exercise",
+		"editor.fontSize": 14
+	}
+}
