@@ -62,15 +62,15 @@ export default {
       this.$refs.form.validate(valid => {
         if (!valid) return;
 
-        this.isLoading = true;
-        // 验证账号密码
-        this.axios
-          .post("/api/user/login", this.form)
-          .then(response => {
-            if (response.data.errno !== 0) {
-              // 错误提示
-              this.$message.error("账号或密码错误");
-            }
+        // this.isLoading = true;
+        // // 验证账号密码
+        // this.axios
+        //   .post("/api/user/login", this.form)
+        //   .then(response => {
+        //     if (response.data.errno !== 0) {
+        //       // 错误提示
+        //       this.$message.error("账号或密码错误");
+        //     }
             // 存储到 vuex 和 本地
             this.$store.commit("login", {
               user: {
@@ -81,19 +81,19 @@ export default {
 
             // 跳转到主页
             this.$router.push({ name: "index" });
-          })
-          .catch(error => {
-            console.log(error);
-            if (error.response.data && error.response.data.errorCode) {
-              this.$message.error(error.response.data.msg);
-            }
-          })
-          .finally(() => {
-            this.isLoading = false;
-          });
+        //   })
+        //   .catch(error => {
+        //     console.log(error);
+        //     if (error.response.data && error.response.data.errorCode) {
+        //       this.$message.error(error.response.data.msg);
+        //     }
+        //   })
+        //   .finally(() => {
+        //     this.isLoading = false;
+        //   });
 
         // 跳转到主页
-        // this.$router.push({ name: "index" });
+        this.$router.push({ name: "index"});
       });
     }
   }

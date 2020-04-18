@@ -60,7 +60,14 @@
 </template>
 
 <script>
+import { DatePicker, Select, Option } from "element-ui";
+
 export default {
+  components: {
+    "el-date-picker": DatePicker,
+    "el-select": Select,
+    "el-option": Option
+  },
   // 自定义 v-model 行为
   model: {
     prop: 'value',

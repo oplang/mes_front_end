@@ -14,34 +14,16 @@ Vue.component('data-editor', DataEditor)
 import {
   Button,
   ButtonGroup,
-  Select,
-  Option,
-  DatePicker,
   Icon,
   Form,
   FormItem,
   Input,
-  Container,
-  Header,
-  Aside,
-  Main,
-  Menu,
-  Submenu,
-  MenuItem,
-  MenuItemGroup,
-  Avatar,
-  Backtop,
-  Tag,
   Card,
-  Table,
-  TableColumn,
-  Pagination,
   Link,
   Message,
   MessageBox,
   Dialog,
   Loading,
-  Calendar,
   Tooltip,
   Row,
   Col,
@@ -49,31 +31,13 @@ import {
 
 Vue.use(Button);
 Vue.use(ButtonGroup);
-Vue.use(Select);
-Vue.use(Option);
-Vue.use(DatePicker);
 Vue.use(Icon);
 Vue.use(Form);
 Vue.use(FormItem);
 Vue.use(Input);
-Vue.use(Container);
-Vue.use(Header);
-Vue.use(Aside);
-Vue.use(Main);
-Vue.use(Menu);
-Vue.use(Submenu);
-Vue.use(MenuItem);
-Vue.use(MenuItemGroup);
-Vue.use(Avatar);
-Vue.use(Backtop);
-Vue.use(Tag);
 Vue.use(Card);
-Vue.use(Table);
-Vue.use(TableColumn);
-Vue.use(Pagination);
 Vue.use(Link);
 Vue.use(Dialog);
-Vue.use(Calendar);
 Vue.use(Tooltip);
 Vue.use(Row);
 Vue.use(Col);

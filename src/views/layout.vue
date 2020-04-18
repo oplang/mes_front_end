@@ -115,7 +115,32 @@
 
 <script>
 import { mapState } from "vuex";
+import {
+  Container,
+  Header,
+  Aside,
+  Main,
+  Menu,
+  Submenu,
+  MenuItem,
+  Avatar,
+  Backtop,
+  Tag
+} from "element-ui";
+
 export default {
+  components: {
+    "el-container": Container,
+    "el-header": Header,
+    "el-aside": Aside,
+    "el-main": Main,
+    "el-menu": Menu,
+    "el-submenu": Submenu,
+    "el-menu-item": MenuItem,
+    "el-avatar": Avatar,
+    "el-backtop": Backtop,
+    "el-tag": Tag
+  },
   data() {
     return {
       navMenu: {}

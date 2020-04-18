@@ -27,12 +27,7 @@
                     icon="el-icon-edit"
                     :underline="false"
                     :style="{ color: types[daysType[data.day]].color }"
-                    @click="
-                      edit(
-                        data.day,
-                        daysType[data.day]
-                      )
-                    "
+                    @click="edit(data.day, daysType[data.day])"
                   ></el-link>
                 </el-tooltip>
               </p>
@@ -70,7 +65,14 @@
 </template>
 
 <script>
+import { Select, Option, Calendar } from "element-ui";
+
 export default {
+  components: {
+    "el-calendar": Calendar,
+    "el-select": Select,
+    "el-option": Option
+  },
   data() {
     return {
       value: "2020-02",

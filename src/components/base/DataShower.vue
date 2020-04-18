@@ -96,12 +96,16 @@
 
 <script>
 import SearchFormCard from "./SearchFormCard.vue";
+import { Table, TableColumn, Pagination } from "element-ui";
 
 export default {
   // 接收依赖注入的 app 属性
   inject: ["app"],
   components: {
-    searchFormCard: SearchFormCard
+    searchFormCard: SearchFormCard,
+    "el-table": Table,
+    "el-table-column": TableColumn,
+    "el-pagination": Pagination
   },
   props: {
     name: String,
