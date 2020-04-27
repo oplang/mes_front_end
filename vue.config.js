@@ -4,8 +4,7 @@ const smp = new SpeedMeasurePlugin()
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ?
-    '/mes/' :
-    '/',
+    '/mes/' : '/',
   productionSourceMap: false,
   devServer: {
     host: "0.0.0.0",
@@ -22,9 +21,11 @@ module.exports = {
     //   }
     // }
   },
-  // configureWebpack: smp.wrap({
-  //   plugins: [new BundleAnalyzerPlugin()]
-  // })
+  configureWebpack: {
+    externals: {
+      "echarts": "echarts" //默认是配置引用的库（这里是echarts）暴露出的全局变量
+    },
+  },
   chainWebpack: (config) => {
     /* 添加分析工具*/
     if (process.env.NODE_ENV === 'production') {
